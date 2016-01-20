@@ -13,12 +13,12 @@
         </Grid.ColumnDefinitions>
         <StackPanel Orientation="Horizontal" Grid.ColumnSpan="2">
             <StackPanel Orientation="Vertical" Width="167">
-                <TextBlock x:Name="tbWidth" Text="Ikkunan leveys" Height="28" Margin="10,10,10,0" />
-                <TextBox x:Name="txtWidth" Text="600" Height="28" Width="114" Margin="10,10,10,0" />
-                <TextBlock x:Name="tbHeight" Text="Ikkunan korkeus" Height="28" Margin="10,10,10,0" />
-                <TextBox x:Name="txtHeight" Text="600" Height="28" Width="114" Margin="10,10,10,0" />
-                <TextBlock x:Name="frameWidth" Text="Karmin leveys" Height="28" Margin="10,10,10,0" />
-                <TextBox x:Name="txtFrame" Text="6" Height="28" Width="114" Margin="10,10,10,0" />
+                <TextBlock x:Name="tbWidth" Text="Ikkunan leveys (mm)" Height="28" Margin="10,10,10,0" />
+                <TextBox x:Name="txtWidth" Text="" Height="28" Width="114" Margin="10,10,10,0" />
+                <TextBlock x:Name="tbHeight" Text="Ikkunan korkeus (mm)" Height="28" Margin="10,10,10,0" />
+                <TextBox x:Name="txtHeight" Text="" Height="28" Width="114" Margin="10,10,10,0" />
+                <TextBlock x:Name="frameWidth" Text="Karmin leveys (mm)" Height="28" Margin="10,10,10,0" />
+                <TextBox x:Name="txtFrame" Text="" Height="28" Width="114" Margin="10,10,10,0" />
             </StackPanel>
             <StackPanel Orientation="Vertical">
                 <Rectangle x:Name="myRectangle" Fill="#FF10ABF3" StrokeThickness="6" Width="310" Height="250" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10" Stroke="BurlyWood" />
@@ -26,6 +26,12 @@
             <StackPanel Orientation="Vertical">
                 <Button x:Name="btnCalculate" Content="Laske pinta-ala ja piiri" Height="32" Width="180" Click="btnCalculate_Click" Margin="10,10,10,0"/>
                 <Button x:Name="btnClose" Content="Sulje" Height="32" Width="180" Click="btnClose_Click" Margin="10,10,10,0"/>
+                <TextBlock x:Name="tbWindowAreaResult" Text="Ikkunan pinta-ala:" Height="28" Margin="10,10,10,0" />
+                <TextBox x:Name="txtWindowArea" Text="" Height="28" Width="114" Margin="10,10,10,0" />
+                <TextBlock x:Name="tbFramePerimeterResult" Text="Karmin piiri:" Height="28" Margin="10,10,10,0" />
+                <TextBox x:Name="txtPerimeter" Text="" Height="28" Width="114" Margin="10,10,10,0" />
+                <TextBlock x:Name="tbFrameAreaResult" Text="Karmin pinta-ala:" Height="28" Margin="10,10,10,0" />
+                <TextBox x:Name="txtFrameArea" Text="" Height="28" Width="114" Margin="10,10,10,0" />
             </StackPanel>
         </StackPanel>
     </Grid>

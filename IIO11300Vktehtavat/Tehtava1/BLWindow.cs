@@ -4,77 +4,31 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Tehtava1
-{
-    public class BusinessLogicWindow{
+namespace Tehtava1{
+    public class BusinessLogicWindow
+    {
         /// <summary>
         /// CalculatePerimeter calculates the perimeter of a window
         /// </summary>
-      
-        
 
-        public static double CalculatePerimeter(double width, double height, double frame){
-            throw new System.NotImplementedException();
 
-          
 
-            double width;
-            width = double.Parse(txtWidth.Text);
-
-            double height;
-            height = double.Parse(txtHeight.Text);
-
-            double frame;
-            frame = double.Parse(txtFrame.Text);
-
-            double result;
-            result = (width + frame) * 2 + (height + frame) * 2;
-
-            return result;
-        }
-
-        public static double CalculateArea(double width, double height, double frame)
+        public static double CalculatePerimeter(double width, double height, double frame)
         {
-            throw new System.NotImplementedException();
-
-
-
-            double width;
-            width = double.Parse(txtWidth.Text);
-
-            double height;
-            height = double.Parse(txtHeight.Text);
-
-            double frame;
-            frame = double.Parse(txtFrame.Text);
-
-            double result;
-            result = width * height;
-
-
-            return result;
+            double perimeter = (2 * (height+ width)) / 1000;
+            return perimeter;
         }
-
+        public static double CalculateWindowArea(double width, double height)
+        {
+            double area = (width * height) / 1000000;
+            return area;
+        }
         public static double CalculateFrameArea(double width, double height, double frame)
         {
-            throw new System.NotImplementedException();
+            double area = ((frame + height * frame + width) - (width * height)) / 1000000;
+            return area;
 
-
-
-            double width;
-            width = double.Parse(txtWidth.Text);
-
-            double height;
-            height = double.Parse(txtHeight.Text);
-
-            double frame;
-            frame = double.Parse(txtFrame.Text);
-
-            double result;
-            result = ((width + frame) * (height + frame))-(width * height);
-
-
-            return result;
         }
     }
 }
+

@@ -31,13 +31,29 @@ namespace Tehtava1
       InitializeComponent();
     }
 
-        private void btnCalculate_Click(object sender, RoutedEventArgs e)
-        {
-            
+        private void btnCalculate_Click(object sender, RoutedEventArgs e){
+
+            double width;
+            double height;
+            double frame;
+            double perimeter;
+            double windowArea;
+            double frameArea;
+
+
             try
             {
-                double result;
-                result = BusinessLogicWindow.CalculatePerimeter(1, 1);
+               
+                width = double.Parse(txtWidth.Text);
+                height = double.Parse(txtHeight.Text);
+                frame = double.Parse(txtFrame.Text);
+                perimeter = BusinessLogicWindow.CalculatePerimeter(width, height, frame);
+                txtPerimeter.Text = perimeter.ToString("0.##") + " m";
+                windowArea = BusinessLogicWindow.CalculateWindowArea(width, height);
+                txtWindowArea.Text = windowArea.ToString("0.##") + "m^2";
+                frameArea = BusinessLogicWindow.CalculatePerimeter(width, height, frame);
+                txtFrameArea.Text = frameArea.ToString("0.##") + "m^2";
+
             }
             catch (Exception ex)
             {

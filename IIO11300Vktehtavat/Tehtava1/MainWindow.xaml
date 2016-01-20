@@ -13,13 +13,15 @@
         </Grid.ColumnDefinitions>
         <StackPanel Orientation="Horizontal" Grid.ColumnSpan="2">
             <StackPanel Orientation="Vertical" Width="167">
-                <TextBlock x:Name="tbWidht" Text="Ikkunan leveys" Height="28" Margin="10,10,10,0" />
-                <TextBox x:Name="txtWidht" Text="600" Height="28" Width="114" Margin="10,10,10,0" />
+                <TextBlock x:Name="tbWidth" Text="Ikkunan leveys" Height="28" Margin="10,10,10,0" />
+                <TextBox x:Name="txtWidth" Text="600" Height="28" Width="114" Margin="10,10,10,0" />
                 <TextBlock x:Name="tbHeight" Text="Ikkunan korkeus" Height="28" Margin="10,10,10,0" />
                 <TextBox x:Name="txtHeight" Text="600" Height="28" Width="114" Margin="10,10,10,0" />
+                <TextBlock x:Name="frameWidth" Text="Karmin leveys" Height="28" Margin="10,10,10,0" />
+                <TextBox x:Name="txtFrame" Text="6" Height="28" Width="114" Margin="10,10,10,0" />
             </StackPanel>
             <StackPanel Orientation="Vertical">
-                <Rectangle x:Name="myRectangle" Fill="#FF10ABF3" StrokeThickness="2" Width="310" Height="100" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10" Stroke="Black" />
+                <Rectangle x:Name="myRectangle" Fill="#FF10ABF3" StrokeThickness="6" Width="310" Height="250" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10" Stroke="BurlyWood" />
             </StackPanel>
             <StackPanel Orientation="Vertical">
                 <Button x:Name="btnCalculate" Content="Laske pinta-ala ja piiri" Height="32" Width="180" Click="btnCalculate_Click" Margin="10,10,10,0"/>

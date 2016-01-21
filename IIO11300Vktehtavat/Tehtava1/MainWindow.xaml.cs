@@ -19,7 +19,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Tehtava1
+namespace JAMK.IT.IIO11300
 {
   /// <summary>
   /// Interaction logic for MainWindow.xaml
@@ -33,26 +33,16 @@ namespace Tehtava1
 
         private void btnCalculate_Click(object sender, RoutedEventArgs e){
 
-            double width;
-            double height;
-            double frame;
-            double perimeter;
-            double windowArea;
-            double frameArea;
-
+            Ikkuna ikk = new Ikkuna();
+            ikk.Width = double.Parse(txtWidth.Text);
+            ikk.Height = double.Parse(txtHeight.Text);
+            txtWindowArea.Text = ikk.calculateArea().ToString();//VE1 pinta-alan laskeminen kutsumalal metodia
+            txtWindowArea.Text = ikk.Area.ToString();//VE1 pinta-ala olion omianisuus
 
             try
             {
                
-                width = double.Parse(txtWidth.Text);
-                height = double.Parse(txtHeight.Text);
-                frame = double.Parse(txtFrame.Text);
-                perimeter = BusinessLogicWindow.CalculatePerimeter(width, height, frame);
-                txtPerimeter.Text = perimeter.ToString("0.##") + " m";
-                windowArea = BusinessLogicWindow.CalculateWindowArea(width, height);
-                txtWindowArea.Text = windowArea.ToString("0.##") + "m^2";
-                frameArea = BusinessLogicWindow.CalculateFrameArea(width, height, frame);
-                txtFrameArea.Text = frameArea.ToString("0.##") + "m^2";
+              
 
             }
             catch (Exception ex)

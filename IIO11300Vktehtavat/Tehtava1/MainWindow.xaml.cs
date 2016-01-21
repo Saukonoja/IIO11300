@@ -51,7 +51,7 @@ namespace Tehtava1
                 txtPerimeter.Text = perimeter.ToString("0.##") + " m";
                 windowArea = BusinessLogicWindow.CalculateWindowArea(width, height);
                 txtWindowArea.Text = windowArea.ToString("0.##") + "m^2";
-                frameArea = BusinessLogicWindow.CalculatePerimeter(width, height, frame);
+                frameArea = BusinessLogicWindow.CalculateFrameArea(width, height, frame);
                 txtFrameArea.Text = frameArea.ToString("0.##") + "m^2";
 
             }

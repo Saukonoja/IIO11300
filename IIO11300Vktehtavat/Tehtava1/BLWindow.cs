@@ -15,7 +15,7 @@ namespace Tehtava1{
 
         public static double CalculatePerimeter(double width, double height, double frame)
         {
-            double perimeter = (2 * (height+ width)) / 1000;
+            double perimeter = (2 * (height + width)) / 1000;
             return perimeter;
         }
         public static double CalculateWindowArea(double width, double height)
@@ -25,7 +25,7 @@ namespace Tehtava1{
         }
         public static double CalculateFrameArea(double width, double height, double frame)
         {
-            double area = ((frame + height * frame + width) - (width * height)) / 1000000;
+            double area = (((2*frame + height) * (width)) - (width * height)) / 1000000;
             return area;
 
         }

@@ -15,9 +15,7 @@ using System.Windows.Shapes;
 
 namespace JAMK.IT.IIO11300
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
+
     public partial class MainWindow : Window
     {
         public MainWindow()
@@ -25,9 +23,8 @@ namespace JAMK.IT.IIO11300
             InitializeComponent();
 
             cbComboBox.Items.Add("Lotto");
-            cbComboBox.Items.Add("test2");
-            cbComboBox.Items.Add("test3");
-            cbComboBox.SelectedItem = "test1";
+            cbComboBox.Items.Add("Viking");
+            cbComboBox.Items.Add("Euro");
            
         }
 
@@ -56,7 +53,7 @@ namespace JAMK.IT.IIO11300
 
             catch(Exception exception)
             {
-                MessageBox.Show("Homo");
+                MessageBox.Show("Exception 52398528958292x998y0900");
             }
             
            

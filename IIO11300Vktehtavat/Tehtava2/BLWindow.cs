@@ -13,7 +13,7 @@ namespace JAMK.IT.IIO11300
     {
 
         Random rand = new Random();
-        public int[] drawArray(int numbers, int max)
+        public int[] drawNumbers(int numbers, int max)
         {
             int tempRand;
             int[] lottoArray = new int[numbers];
@@ -32,11 +32,11 @@ namespace JAMK.IT.IIO11300
             switch (gamename)
             {
                 case "Lotto":
-                    return "Numerot: " + string.Join(", ", drawArray(7, 39));
-                case "Viking Lotto":
-                    return "Numerot: " + string.Join(", ", drawArray(6, 48));
-                case "Eurojackpot":
-                    return "Numerot: " + string.Join(", ", drawArray(5, 50)) + " + " + string.Join(", ", drawArray(2, 8));
+                    return string.Join(", ", drawNumbers(7, 39));
+                case "Viking":
+                    return string.Join(", ", drawNumbers(6, 48));
+                case "Euro":
+                    return string.Join(", ", drawNumbers(5, 50)) + " + " + string.Join(", ", drawNumbers(2, 8));
                 default:
                     return "Select game";
             }

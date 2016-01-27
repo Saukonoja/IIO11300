@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Tehtava2.Properties
+namespace JAMK.IT.IIO11300.Properties
 {
 
 

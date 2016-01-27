@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Tehtava2
+namespace JAMK.IT.IIO11300
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -24,10 +24,45 @@ namespace Tehtava2
         {
             InitializeComponent();
 
-            comboBox.Items.Add("test1");
-            comboBox.Items.Add("test2");
-            comboBox.Items.Add("test3");
-            comboBox.SelectedItem = "test3";
+            cbComboBox.Items.Add("Lotto");
+            cbComboBox.Items.Add("test2");
+            cbComboBox.Items.Add("test3");
+            cbComboBox.SelectedItem = "test1";
+           
+        }
+
+        private void btnClose_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
+
+        private void btnClear_Click(object sender, RoutedEventArgs e)
+        {
+            txtNumberOf.Text = ("1").ToString();
+            txtDrawnNumbers.Text=("").ToString();
+        }
+
+        private void btnDraw_Click(object sender, RoutedEventArgs e)
+        {
+            try {
+                txtDrawnNumbers.Text = String.Empty;
+                BLlotto lotto = new BLlotto();
+                for (int i = 0; i < int.Parse(txtNumberOf.Text); i++)
+                {
+                    txtDrawnNumbers.AppendText(lotto.draw(cbComboBox.Text));
+                    txtDrawnNumbers.AppendText(Environment.NewLine);
+                }
+            }
+
+            catch(Exception exception)
+            {
+                MessageBox.Show("Homo");
+            }
+            
+           
         }
     }
+
+  
+
 }

@@ -21,6 +21,10 @@ namespace JAMK.IT.IIO11300
             for (int i = 0; i < numbers; i++)
             {
                 tempRand = rand.Next(1, max + 1);
+                if (lottoArray.Contains(tempRand))
+                {
+                    i--;
+                }
                 lottoArray[i] = tempRand;
             }
             Array.Sort(lottoArray);

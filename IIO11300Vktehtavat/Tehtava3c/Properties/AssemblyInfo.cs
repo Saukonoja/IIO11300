@@ -1,8 +1,8 @@
-﻿JAMK.IT.IIO11300 System.Reflection;
-JAMK.IT.IIO11300 System.Resources;
-JAMK.IT.IIO11300 System.Runtime.CompilerServices;
-JAMK.IT.IIO11300 System.Runtime.InteropServices;
-JAMK.IT.IIO11300 System.Windows;
+﻿using System.Reflection;
+using System.Resources;
+using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
+using System.Windows;
 
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information

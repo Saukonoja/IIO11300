@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:H3MittausData"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525" FontSize="18">
+        Title="MainWindow" Height="350" Width="1000" FontSize="18">
     <Grid>
         <TabControl x:Name="tabControl" 
                     HorizontalAlignment="Stretch" 
@@ -18,6 +18,15 @@
                             <TextBlock x:Name="txtToday"/>
                             <TextBlock Text="Tiedostonimi:" Margin="10,0,0,0"/>
                             <TextBox x:Name="txtFileName" Text="d:\temp\testi.txt"/>
+                            <Button x:Name="btnSave" Content="Save" Click="btnSave_Click" />
+                            <Button x:Name="btnRead" Content="Read" Click="btnRead_Click"  />
+                            <TextBlock Text="XML" />
+                            <Button x:Name="btnDeSerialize" Content="Deserialize" Click="btnDeSerialize_Click" />
+                            <Button x:Name="btnSerialize" Content="Serialize" Click="btnSerialize_Click" />
+                            <TextBlock Text="Binääri" />
+                            <Button x:Name="btnDeSerializeBin" Content="Deserialize" Click="btnDeSerializeBin_Click"  />
+                            <Button x:Name="btnSerializeBin" Content="Serialize" Click="btnSerializeBin_Click"  />
+                            
                         </StackPanel>
                         <StackPanel Orientation="Horizontal">
                             <TextBlock Text="klo:" />

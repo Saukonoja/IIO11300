@@ -24,7 +24,7 @@ namespace JAMK.IT.IIO11300 {
         public MainWindow() {
             InitializeComponent();
             txtDirectory.Text = ConfigurationManager.AppSettings["DefPath"].ToString();
-            txtResult.Text = ConfigurationManager.AppSettings["ResDefPath"].ToString();
+            //txtResult.Text = ConfigurationManager.AppSettings["ResDefPath"].ToString();
         }
 
         private void btnGetfiles_Click(object sender, RoutedEventArgs e) {
@@ -35,8 +35,7 @@ namespace JAMK.IT.IIO11300 {
                     lbFound.Items.Add(file.Name);
                 }
                 tbNotice.Text = "Found " + lbFound.Items.Count.ToString() + " files";
-                }
-            catch(Exception ex) {
+            } catch (Exception ex) {
                 tbNotice.Text = "Attempted to access a path that is not on the disk.";
             }
         }
@@ -47,17 +46,15 @@ namespace JAMK.IT.IIO11300 {
             try {
                 for (int i = 0; i < lbFound.Items.Count; i++) {
                     sb.Append(File.ReadAllText(path + "\\" + lbFound.Items[i].ToString()));
-                    }
+                }
                 tbNotice.Text = "Files merged";
-                } 
-            catch (Exception ex) {
+            } catch (Exception ex) {
                 tbNotice.Text = "Cannot read file";
             }
 
             try {
                 File.WriteAllText(txtResult.Text, sb.ToString());
-            }
-            catch (Exception ex) {
+            } catch (Exception ex) {
                 tbNotice.Text = "Cannot access file path";
             }
         }

@@ -1,0 +1,14 @@
+D:\H3694\REPOS\iio11300\IIO11300\IIO11300Vktehtavat\Tehtava3c\bin\Debug\Tehtävä3c.exe.config
+D:\H3694\REPOS\iio11300\IIO11300\IIO11300Vktehtavat\Tehtava3c\obj\Debug\Tehtävä3c.exe
+D:\H3694\REPOS\iio11300\IIO11300\IIO11300Vktehtavat\Tehtava3c\obj\Debug\Tehtävä3c.pdb
+D:\H3694\REPOS\iio11300\IIO11300\IIO11300Vktehtavat\Tehtava3c\bin\Debug\Tehtävä3c.exe
+D:\H3694\REPOS\iio11300\IIO11300\IIO11300Vktehtavat\Tehtava3c\bin\Debug\Tehtävä3c.pdb
+D:\H3694\REPOS\iio11300\IIO11300\IIO11300Vktehtavat\Tehtava3c\obj\Debug\Tehtava3c.csprojResolveAssemblyReference.cache
+D:\H3694\REPOS\iio11300\IIO11300\IIO11300Vktehtavat\Tehtava3c\obj\Debug\MainWindow.g.cs
+D:\H3694\REPOS\iio11300\IIO11300\IIO11300Vktehtavat\Tehtava3c\obj\Debug\App.g.cs
+D:\H3694\REPOS\iio11300\IIO11300\IIO11300Vktehtavat\Tehtava3c\obj\Debug\Tehtävä3c_MarkupCompile.cache
+D:\H3694\REPOS\iio11300\IIO11300\IIO11300Vktehtavat\Tehtava3c\obj\Debug\Tehtävä3c_MarkupCompile.lref
+D:\H3694\REPOS\iio11300\IIO11300\IIO11300Vktehtavat\Tehtava3c\obj\Debug\MainWindow.baml
+D:\H3694\REPOS\iio11300\IIO11300\IIO11300Vktehtavat\Tehtava3c\obj\Debug\Tehtävä3c.g.resources
+D:\H3694\REPOS\iio11300\IIO11300\IIO11300Vktehtavat\Tehtava3c\obj\Debug\Tehtävä3c.Properties.Resources.resources
+D:\H3694\REPOS\iio11300\IIO11300\IIO11300Vktehtavat\Tehtava3c\obj\Debug\Tehtava3c.csproj.GenerateResource.Cache

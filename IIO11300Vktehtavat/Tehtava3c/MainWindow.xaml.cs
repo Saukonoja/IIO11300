@@ -36,7 +36,7 @@ namespace JAMK.IT.IIO11300 {
                 }
                 tbNotice.Text = "Found " + lbFound.Items.Count.ToString() + " files";
                 }
-            catch(Exception ex) {
+            catch(Exception exc) {
                 tbNotice.Text = "Attempted to access a path that is not on the disk.";
             }
         }
@@ -50,14 +50,14 @@ namespace JAMK.IT.IIO11300 {
                     }
                 tbNotice.Text = "Files merged";
                 } 
-            catch (Exception ex) {
+            catch (Exception exc) {
                 tbNotice.Text = "Cannot read file";
             }
 
             try {
                 File.WriteAllText(txtResult.Text, sb.ToString());
             }
-            catch (Exception ex) {
+            catch (Exception exc) {
                 tbNotice.Text = "Cannot access file path";
             }
         }

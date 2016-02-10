@@ -16,10 +16,10 @@
             </StackPanel>
 
             <StackPanel Orientation="Vertical" Margin="20" HorizontalAlignment="Left">
-                <TextBox x:Name="tbFname" Margin="15" Width="150"></TextBox>
-                <TextBox x:Name="tbLname" Margin="15" Width="150"></TextBox>
-                <TextBox x:Name="tbPrice" Margin="15" Width="150"></TextBox>
-                <ComboBox x:Name="cbTeam" Margin="15" Width="150" SelectionChanged="cbTeam_SelectionChanged"></ComboBox>
+                <TextBox x:Name="txtFname" Margin="15" Width="150"></TextBox>
+                <TextBox x:Name="txtLname" Margin="15" Width="150"></TextBox>
+                <TextBox x:Name="txtPrice" Margin="15" Width="150"></TextBox>
+                <ComboBox x:Name="cbTeam" Margin="15" Width="150"></ComboBox>
             </StackPanel>
 
             <StackPanel Orientation="Vertical" Margin="20" HorizontalAlignment="Left">
@@ -31,13 +31,17 @@
             </StackPanel>
 
             <StackPanel Orientation="Vertical" Margin="20" HorizontalAlignment="Left">
-                <ListBox x:Name="lbPlayers" Margin="15" Width="200" Height="160"></ListBox>
+                <ListBox x:Name="lbPlayers" Margin="15" Width="200" Height="160" SelectionChanged="lbPlayers_SelectionChanged"></ListBox>
             </StackPanel>
 
         </StackPanel>
 
         <StackPanel VerticalAlignment="Bottom" >
-            <StatusBar x:Name="sbStatus" Width="770" Height="15" Margin="10"></StatusBar>
+            <StatusBar>
+                <StatusBarItem Height="25" FontSize="15">
+                    <TextBlock Name="tbStatus" Text="Ok" />
+                </StatusBarItem>
+            </StatusBar>
         </StackPanel>
     </Grid>
 </Window>

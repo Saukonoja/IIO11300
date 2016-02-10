@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.IO;
 
 namespace JAMK.IT.IIO11300 {
-    class BLPlayer {
+    class Player {
 
         #region Variables
         private string fname;
@@ -28,16 +28,21 @@ namespace JAMK.IT.IIO11300 {
             get { return price; }
             set { price = value; }
         }
-
         public string Team {
             get { return team; }
             set { team = value; }
         }
+        public string Fullname {
+            get { return (fname + " " + lname); }
+        }
+        public string Showname {
+            get { return (Fullname + ", " + team); }
+        }
         #endregion
 
         #region Constructors
-        public BLPlayer() { }
-        public BLPlayer(string fname, string lname, int price, string team) {
+        public Player() { }
+        public Player(string fname, string lname, int price, string team) {
             this.fname = fname;
             this.lname = lname;
             this.price = price;
@@ -46,26 +51,27 @@ namespace JAMK.IT.IIO11300 {
         #endregion
 
         #region Methods
-        public static void SaveToFile(List<BLPlayer> players) {
+        public static void SaveToFile(List<Player> players) {
             try {
-                StreamWriter sw;
-                //tarkastetaan onko tiedosto jo olemassa
-                if (File.Exists(filename)) {
-                    //liitetään olemassa olevaan tiedostoon
-                    sw = File.AppendText(filename);
-                } else {
-                    //luodaan uusi
-                    sw = File.CreateText(filename);
-                }
-                //kirjoitus
-                foreach (var item in players) {
-                    sw.WriteLine(item);
-                }
-                sw.Close();
-            } catch (Exception ex) {
+                Microsoft.Win32.SaveFileDialog dialog = new Microsoft.Win32.SaveFileDialog();
+                dialog.FileName = "Players";
+                dialog.DefaultExt = ".txt";
+                dialog.Filter = "Text documents (.txt)|*.txt";
 
+                Nullable<bool> result = dialog.ShowDialog();
+                if (result == true) {
+                    StreamWriter sw = File.AppendText(dialog.FileName);
+                    foreach(var player in players) {
+                        sw.WriteLine(player);
+                    }
+                    sw.Close();
+                }
+            } catch (Exception ex) {
                 throw ex;
             }
+        }
+        public override string ToString() {
+            return Showname;
         }
         #endregion
 

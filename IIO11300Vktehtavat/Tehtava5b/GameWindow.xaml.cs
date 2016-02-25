@@ -20,7 +20,7 @@ namespace Tehtava5b {
         Snake snake = new Snake();
         private List<Point> bonusPoints = new List<Point>();
         private List<Point> snakePoints = new List<Point>();
-        int maxBonus = 20;
+        int maxBonus = 10;
         bool isPlaying = true;
         Random rand = new Random();
         DispatcherTimer timer = new DispatcherTimer();
@@ -61,7 +61,7 @@ namespace Tehtava5b {
             }
         }
         private void paintBonus(int index) {
-            Point bonusPoint = new Point(rand.Next(5, 450), rand.Next(5, 300));
+            Point bonusPoint = new Point(rand.Next(5, 450), rand.Next(5, 450));
             Ellipse bonus = new Ellipse();
             bonus.Fill = Brushes.Red;
             bonus.Width = 10;
@@ -122,21 +122,25 @@ namespace Tehtava5b {
                     paintSnake(currentPosition);
                     break;
             }
-            if ((currentPosition.X < 5) || (currentPosition.X > 525) ||
-                (currentPosition.Y < 5) || (currentPosition.Y > 350))
+            if ((currentPosition.X < 5) || (currentPosition.X > 470) ||
+                (currentPosition.Y < 5) || (currentPosition.Y > 450))
                 GameOver();
-            int i = 0;
+            int j = 0;
             foreach (Point point in bonusPoints) {
                 if ((Math.Abs(point.X - currentPosition.X) < snake.HeadSize) &&
                     (Math.Abs(point.Y - currentPosition.Y) < snake.HeadSize)) {
                     snake.Length += 10;
                     snake.Score += 10;
-                    bonusPoints.RemoveAt(i);
-                    Canvas.Children.RemoveAt(i);
-                    paintBonus(i);
+                    snake.Speed += 1.0f;
+                    if (snake.Speed > snake.MaxSpeed) {
+                        snake.Speed = snake.MaxSpeed;
+                    }
+                    bonusPoints.RemoveAt(j);
+                    Canvas.Children.RemoveAt(j);
+                    paintBonus(j);
                     break;
                 }
-                i++;
+                j++;
                 tbScore.Text = "Score: " + snake.Score;
             }
             for (int q = 0; q < (snakePoints.Count - snake.HeadSize * 2); q++) {

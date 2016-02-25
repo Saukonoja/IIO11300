@@ -19,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H4TyontekijatConsole", "H4T
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H4TyontekijatWPF", "H4TyontekijatWPF\H4TyontekijatWPF.csproj", "{16B0880C-B1A2-4328-8C25-6F66262A928B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tehtava5b", "Tehtava5b\Tehtava5b.csproj", "{93D25DBA-014A-4031-BDBA-1B6B23070478}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H5Movies", "H5Movies\H5Movies.csproj", "{7687F34B-C410-4AB6-B5D1-7EDF51D696BC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +61,14 @@ Global
 		{16B0880C-B1A2-4328-8C25-6F66262A928B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16B0880C-B1A2-4328-8C25-6F66262A928B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16B0880C-B1A2-4328-8C25-6F66262A928B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93D25DBA-014A-4031-BDBA-1B6B23070478}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93D25DBA-014A-4031-BDBA-1B6B23070478}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93D25DBA-014A-4031-BDBA-1B6B23070478}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93D25DBA-014A-4031-BDBA-1B6B23070478}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7687F34B-C410-4AB6-B5D1-7EDF51D696BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7687F34B-C410-4AB6-B5D1-7EDF51D696BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7687F34B-C410-4AB6-B5D1-7EDF51D696BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7687F34B-C410-4AB6-B5D1-7EDF51D696BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

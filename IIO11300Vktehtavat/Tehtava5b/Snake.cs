@@ -13,7 +13,7 @@ namespace Tehtava5b {
         private float speed = 1f;
         private float maxSpeed = 6f;
         private int length = 32;
-        private float headSize = 10f;
+        private float headSize = 8f;
         private int score = 0;
         private Point startingPoint = new Point(300, 200);
         #endregion

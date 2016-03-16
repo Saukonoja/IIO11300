@@ -10,17 +10,17 @@
         <StackPanel Orientation="Horizontal">
             <StackPanel Width="175">
                 <Button x:Name="btnGetCustomers" Click="btnGetCustomers_Click">Hae asiakkaat</Button>
-                <ListBox x:Name="lbCustomers" ItemsSource="{Binding}" SelectionChanged="lbCustomers_SelectionChanged"></ListBox>
+                <ListBox x:Name="lbCustomers" ItemsSource="{Binding}" SelectionChanged="lbCustomers_SelectionChanged" Height="300"></ListBox>
             </StackPanel>
             <StackPanel Width="175">
                 <TextBlock>Etunimi</TextBlock>
-                <TextBox x:Name="tbFname" Text="{Binding Path=fname, Mode=OneWay}" Background="BlanchedAlmond"></TextBox>
+                <TextBox x:Name="txtFname" Text="{Binding Path=firstname, Mode=OneWay}" Background="BlanchedAlmond"></TextBox>
                 <TextBlock>Sukunimi</TextBlock>
-                <TextBox x:Name="tbLname" Text="{Binding Path=lname, Mode=OneWay}" Background="BlanchedAlmond"></TextBox>
+                <TextBox x:Name="txtLname" Text="{Binding Path=lastname, Mode=OneWay}" Background="BlanchedAlmond"></TextBox>
                 <TextBlock>Osoite</TextBlock>
-                <TextBox x:Name="tbAddress" Text="{Binding Path=address, Mode=OneWay}" Background="BlanchedAlmond"></TextBox>
+                <TextBox x:Name="txtAddress" Text="{Binding Path=address, Mode=OneWay}" Background="BlanchedAlmond"></TextBox>
                 <TextBlock>Kaupunki</TextBlock>
-                <TextBox x:Name="tbCity" Text="{Binding Path=city, Mode=OneWay}" Background="BlanchedAlmond"></TextBox>
+                <TextBox x:Name="txtCity" Text="{Binding Path=city, Mode=OneWay}" Background="BlanchedAlmond"></TextBox>
             </StackPanel>
         </StackPanel>
     </Grid>

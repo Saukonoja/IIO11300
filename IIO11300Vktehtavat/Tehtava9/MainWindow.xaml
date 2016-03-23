@@ -1,0 +1,41 @@
+﻿<Window x:Class="Tehtava9.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tehtava9"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <StackPanel>
+            <StackPanel>
+            <Button x:Name="btnGetCustomers" Click="btnGetCustomers_Click">Hae asiakkaat</Button>
+            <Button x:Name="btnCreateNew" Click="btnCreateNew_Click">Tee uusi</Button>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock>etunimi</TextBlock>
+                <TextBox x:Name="txtFirstname" Width="50"></TextBox>
+                <TextBlock>sukunimi</TextBlock>
+                <TextBox x:Name="txtLastname" Width="50"></TextBox>
+                <TextBlock>osoite</TextBlock>
+                <TextBox x:Name="txtAddress" Width="50"></TextBox>
+                <TextBlock>postinro</TextBlock>
+                <TextBox x:Name="txtZip" Width="50"></TextBox>
+                <TextBlock>kaupunki</TextBlock>
+                    <TextBox x:Name="txtCity" Width="50"></TextBox>
+                </StackPanel>
+            <Button x:Name="btnDelete" Click="btnDelete_Click">Poista valittu</Button>
+            <Button x:Name="btnSaveChanges" Click="btnSaveChanges_Click">Tallenna muutokset</Button>
+        </StackPanel>
+        <StackPanel >
+                <DataGrid x:Name="dgCustomers" Height="180" ItemsSource="{Binding}" SelectionChanged="dgCustomers_SelectionChanged"></DataGrid>
+        </StackPanel>
+        <StackPanel>
+            <StatusBar>
+                <StatusBarItem>
+                    <Label x:Name="lbMessages" Content="Message"></Label>
+                </StatusBarItem>
+            </StatusBar>
+        </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

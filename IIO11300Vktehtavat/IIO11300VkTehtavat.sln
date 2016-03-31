@@ -37,6 +37,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H10ADOBlanco", "IIO13200-AD
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tehtava9", "Tehtava9\Tehtava9.csproj", "{75C080A7-ADE3-45BE-8A5C-93853B081E56}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H9Bookshop", "H9Bookshop\H9Bookshop.csproj", "{287E8734-4776-4FB8-B981-2055F064E62F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H11Bookshop", "H11Bookshop\H11Bookshop.csproj", "{8769E2EE-4290-46F5-9B34-7FD6CA08F1D6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +115,14 @@ Global
 		{75C080A7-ADE3-45BE-8A5C-93853B081E56}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{75C080A7-ADE3-45BE-8A5C-93853B081E56}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{75C080A7-ADE3-45BE-8A5C-93853B081E56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{287E8734-4776-4FB8-B981-2055F064E62F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{287E8734-4776-4FB8-B981-2055F064E62F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{287E8734-4776-4FB8-B981-2055F064E62F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{287E8734-4776-4FB8-B981-2055F064E62F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8769E2EE-4290-46F5-9B34-7FD6CA08F1D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8769E2EE-4290-46F5-9B34-7FD6CA08F1D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8769E2EE-4290-46F5-9B34-7FD6CA08F1D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8769E2EE-4290-46F5-9B34-7FD6CA08F1D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
